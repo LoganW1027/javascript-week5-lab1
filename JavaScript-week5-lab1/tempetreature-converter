@@ -1,0 +1,22 @@
+// Function to convert Celsius to Fahrenheit
+function convertCelsiusToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+}
+
+// Prompt the user for input
+let celsiusInput = prompt("Enter a temperature in Celsius:");
+
+// Convert the input to a number
+let celsius = parseFloat(celsiusInput);
+
+// Check if the input is a valid number
+if (isNaN(celsius)) {
+  console.log("Please enter a valid number.");
+} else {
+  // Perform the conversion
+  let fahrenheit = convertCelsiusToFahrenheit(celsius);
+
+  // Display the result
+  console.log(`${celsius}°C is equal to ${fahrenheit.toFixed(2)}°F.`);
+  alert(`${celsius}°C is equal to ${fahrenheit.toFixed(2)}°F.`);
+}
